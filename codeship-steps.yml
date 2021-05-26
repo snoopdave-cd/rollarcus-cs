@@ -1,4 +1,4 @@
 - name: ci
-  service: rollarcus-ci 
+  service: rollarcus-cs
   command: mvn test -B
 
