@@ -1,0 +1,11 @@
+rollarcus-cs:
+  build:
+    image: snoopdave/roller
+    dockerfile: Dockerfile
+  depends_on:
+    - postgres
+  environment:
+    - DATABASE_URL=postgres://postgres@postgres/rollerdb
+postgres:
+  image: healthcheck/postgres:alpine
+
